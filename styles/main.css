@@ -1,12 +1,33 @@
+main.container {
+  padding-inline: 1rem;
+}
+
 main {
   display: flex;
-  gap: 24px;
-  padding-block: 24px;
+  gap: 1rem;
+  padding-block: 1rem;
   flex-wrap: wrap;
 }
 
 main img {
-  width: 286px;
-  height: 286px;
+  width: 328px;
+  height: 328px;
   object-fit: cover;
+}
+
+@media (width >= 80rem) {
+  main.container {
+    padding-inline: 2rem;
+  }
+
+  main {
+    gap: 1.5rem;
+    padding-block: 1.5rem;
+  }
+
+  main img {
+    width: 286px;
+    height: 286px;
+    object-fit: cover;
+  }
 }
